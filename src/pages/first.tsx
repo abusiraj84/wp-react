@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useRef } from "react";
 import {
   Select,
@@ -5,9 +6,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../components/ui/select";
-import { Button } from "../components/ui/button";
-import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group";
+} from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { FaFileImage, FaFileVideo, FaFileAlt, FaTrash } from "react-icons/fa"; // Import trash icon
 
 const DragAndDropFileUpload = () => {

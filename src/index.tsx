@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "./components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle";
@@ -14,13 +13,18 @@ import StaffDetails from "./pages/StaffDetails";
 import NotFound from "./components/NotFound";
 import App from "./app";
 import "./index.css";
-// Define routes
+import Home from "./pages/Home";
+
+// Define routes for the app
 const routes: RouteObject[] = [
   {
     path: "/",
     element: (
       <div>
-        <App />
+        {/* <App /> */}
+        <div className="w-[800px]">
+          <Home />
+        </div>
       </div>
     ),
   },
